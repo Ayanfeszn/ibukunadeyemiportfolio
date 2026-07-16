@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ibukun — Motion Designer</title>
+<!--
+  HOW TO CUSTOMIZE THIS TEMPLATE
+  1. Search for "REPLACE:" comments — each marks text, a link, or a thumbnail to swap in.
+  2. Project thumbnails are CSS gradient placeholders. To use real media, replace the
+     .thumb div's background with: background: url('your-image.jpg') center/cover;
+     or drop in a <video> / <img> tag inside .thumb instead.
+  3. Colors are defined as CSS variables at the top of styles.css — change
+     --accent to reset the whole palette.
+  4. Each Selected Work card links to its own case-study page (project-1.html … project-7.html).
+     Edit those files directly for full write-ups, or duplicate one for a new project.
+-->
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+  <div class="logo">IBUKUN<span style="color:var(--accent)">.</span></div>
+  <div class="nav-links">
+    <a href="#work">Work</a>
+    <a href="lab.html">Lab</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="folder-wrap">
+    <!-- REPLACE: swap these inline SVGs for your own sticker art/images if you have them -->
+    <div class="sticker sticker-1" aria-hidden="true">
+      <svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="30" fill="#fff" stroke="#111" stroke-width="3"/><path d="M26 20l20 12-20 12z" fill="#111"/></svg>
+    </div>
+    <div class="sticker sticker-2" aria-hidden="true">
+      <svg viewBox="0 0 64 64"><path d="M32 2l6 20 20 6-20 6-6 20-6-20-20-6 20-6z" fill="#ffce2e" stroke="#111" stroke-width="2.5"/></svg>
+    </div>
+    <div class="sticker sticker-3" aria-hidden="true">
+      <svg viewBox="0 0 64 64"><path d="M40 4c6 10-4 14-2 24s16 10 12 20c-8 8-26 8-34-2C6 34 12 16 24 8c5-3.5 11-6 16-4z" fill="#ff4d2e" stroke="#111" stroke-width="2.5"/></svg>
+    </div>
+    <div class="sticker sticker-4" aria-hidden="true">
+      <svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="30" fill="#2e6bff" stroke="#111" stroke-width="3"/><circle cx="24" cy="26" r="4" fill="#fff"/><circle cx="42" cy="26" r="4" fill="#fff"/><path d="M20 42q12 10 24 0" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round"/></svg>
+    </div>
+    <div class="folder-tab"><span>Ibukun Adeyemi</span></div>
+    <div class="folder-body"></div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="work-intro">
+    <!-- REPLACE: a short, creative line about you -->
+    <p>Multidisciplinary creative — I make things move, blink, and breathe.</p>
+    <!-- REPLACE: filter tags — keep these in sync with each project's data-tags below.
+         Clicking a tag filters the grid to matching projects; click again (or "All") to reset. -->
+    <div class="skills" id="tag-filter">
+      <span class="tag-filter-btn is-active" data-filter="all">All</span>
+      <span class="tag-filter-btn" data-filter="2D">2D</span>
+      <span class="tag-filter-btn" data-filter="3D">3D</span>
+      <span class="tag-filter-btn" data-filter="Motion">Motion</span>
+      <span class="tag-filter-btn" data-filter="Brand">Brand</span>
+      <span class="tag-filter-btn" data-filter="Type">Type</span>
+      <span class="tag-filter-btn" data-filter="UI">UI</span>
+    </div>
+  </div>
+  <!-- REPLACE: mosaic grid — 7 cells (2 wide / 3 across / 2 wide) like a moodboard.
+       Each .project's grid-column/grid-row is set in styles.css (.p1 – .p7);
+       reorder or resize by editing those spans. Each card links to its case-study page.
+       data-tags should match the filter buttons above (space-separated for multiple). -->
+  <div class="grid" id="work-grid">
+    <a class="project p1" href="project-1.html" data-tags="2D 3D">
+      <div class="thumb"></div>
+      <div class="project-info">
+        <div>
+          <h3><!-- REPLACE: project title -->Project One</h3>
+          <p><!-- REPLACE: brand / short desc -->Brand film — Client Name</p>
+        </div>
+        <span class="project-tag">2D / 3D</span>
+      </div>
+    </a>
+    <a class="project p2" href="project-2.html" data-tags="Brand">
+      <div class="thumb"></div>
+      <div class="project-info">
+        <div>
+          <h3>Project Two</h3>
+          <p>Logo animation — Client Name</p>
+        </div>
+        <span class="project-tag">Brand</span>
+      </div>
+    </a>
+    <a class="project p3" href="project-3.html" data-tags="Type">
+      <div class="thumb"></div>
+      <div class="project-info">
+        <div>
+          <h3>Project Three</h3>
+          <p>Title sequence</p>
+        </div>
+        <span class="project-tag">Type</span>
+      </div>
+    </a>
+    <a class="project p4" href="project-4.html" data-tags="Motion">
+      <div class="thumb"></div>
+      <div class="project-info">
+        <div>
+          <h3>Project Four</h3>
+          <p>Brand identity</p>
+        </div>
+        <span class="project-tag">Motion</span>
+      </div>
+    </a>
+    <a class="project p5" href="project-5.html" data-tags="UI">
+      <div class="thumb"></div>
+      <div class="project-info">
+        <div>
+          <h3>Project Five</h3>
+          <p>App promo</p>
+        </div>
+        <span class="project-tag">UI</span>
+      </div>
+    </a>
+    <a class="project p6" href="project-6.html" data-tags="3D">
+      <div class="thumb"></div>
+      <div class="project-info">
+        <div>
+          <h3>Project Six</h3>
+          <p>Product spot</p>
+        </div>
+        <span class="project-tag">3D</span>
+      </div>
+    </a>
+    <a class="project p7" href="project-7.html" data-tags="Motion">
+      <div class="thumb"></div>
+      <div class="project-info">
+        <div>
+          <h3>Project Seven</h3>
+          <p>Social campaign — Client Name</p>
+        </div>
+        <span class="project-tag">Motion</span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<footer>
+  <span>© 2026 Ibukun Adeyemi</span>
+  <span>Built with motion in mind</span>
+</footer>
+
+<script>
+  // simple scroll-reveal for project cards and section heads
+  document.querySelectorAll('.project, .section-head').forEach(el=>{
+    el.classList.add('reveal');
+  });
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  },{threshold:0.15});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+  // tag filter: click a tag to show only matching projects
+  const grid = document.getElementById('work-grid');
+  const projects = grid ? Array.from(grid.querySelectorAll('.project')) : [];
+  const tagBtns = document.querySelectorAll('.tag-filter-btn');
+  tagBtns.forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      const filter = btn.dataset.filter;
+      tagBtns.forEach(b=>b.classList.remove('is-active'));
+      btn.classList.add('is-active');
+      if(filter === 'all'){
+        grid.classList.remove('is-filtered');
+        projects.forEach(p=>p.classList.remove('is-hidden'));
+        return;
+      }
+      grid.classList.add('is-filtered');
+      projects.forEach(p=>{
+        const tags = (p.dataset.tags || '').split(' ');
+        p.classList.toggle('is-hidden', !tags.includes(filter));
+      });
+    });
+  });
+</script>
+
+</body>
+</html>

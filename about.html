@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Ibukun</title>
+<link rel="stylesheet" href="styles.css">
+<!-- signature-style handwriting accent, used sparingly on this page -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav>
+  <div class="logo"><a href="index.html">IBUKUN<span style="color:var(--accent)">.</span></a></div>
+  <div class="nav-links">
+    <a href="index.html#work">Work</a>
+    <a href="lab.html">Lab</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<section id="about-id">
+  <div class="card-stack-wrap">
+    <p class="stack-hint">swipe (or tap the arrows) to see what else I'm into →</p>
+    <!-- REPLACE: the ID card's photo/name/role, and each .stack-card's emoji + label.
+         Order here = starting stack order (id-card on top). Duplicate a .stack-card
+         (copy the sketching/coffee/photography/gaming pattern) to add another. -->
+    <div class="card-stack" id="cardStack">
+      <div class="stack-card id-card">
+        <div class="id-card-top">
+          <span class="id-label">creative id</span>
+          <span class="id-no">no. 001</span>
+        </div>
+        <div class="id-photo">
+          <!-- REPLACE: swap for <img src="you.jpg"> -->
+          <span>photo</span>
+        </div>
+        <p class="id-name">Ibukun Adeyemi</p>
+        <p class="id-role">Motion Designer · Multidisciplinary Creative</p>
+        <div class="id-barcode" aria-hidden="true"></div>
+        <div class="id-bottom-row">
+          <span class="id-serial">IB-2026-MD</span>
+          <span class="id-signature">Ibukun</span>
+        </div>
+      </div>
+
+      <div class="stack-card interest-big it1">
+        <span class="interest-big-emoji">✏️</span>
+        <p class="interest-big-label">sketching</p>
+      </div>
+      <div class="stack-card interest-big it2">
+        <span class="interest-big-emoji">☕</span>
+        <p class="interest-big-label">coffee runs</p>
+      </div>
+      <div class="stack-card interest-big it3">
+        <span class="interest-big-emoji">📷</span>
+        <p class="interest-big-label">photography</p>
+      </div>
+      <div class="stack-card interest-big it4">
+        <span class="interest-big-emoji">🎮</span>
+        <p class="interest-big-label">gaming</p>
+      </div>
+    </div>
+
+    <div class="stack-controls">
+      <button class="stack-btn" id="stackPrev" aria-label="Previous card">‹</button>
+      <button class="stack-btn" id="stackNext" aria-label="Next card">›</button>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="about-editorial">
+    <!-- REPLACE: your intro line + bio — first few words get the big treatment -->
+    <p class="lede"><span>Hi, I'm Ibukun</span> — I turn still ideas into things that move, blink, and breathe.</p>
+    <p>I'm a motion designer who likes bending typography, illustration, and 3D until they tell a story. Most days that means brand films and social content; some days it means staying up too late animating something nobody asked for, purely because it's fun.</p>
+    <p>If it moves, I probably want to make it move better.</p>
+  </div>
+
+  <div class="quick-facts">
+    <!-- REPLACE: swap these for your own quirks -->
+    <div class="fact"><span class="fact-label">based in</span><span class="fact-value">Lagos, Nigeria</span></div>
+    <div class="fact"><span class="fact-label">fueled by</span><span class="fact-value">cold brew &amp; deadlines</span></div>
+    <div class="fact"><span class="fact-label">currently into</span><span class="fact-value">kinetic type</span></div>
+    <div class="fact"><span class="fact-label">go-to tool</span><span class="fact-value">After Effects</span></div>
+  </div>
+
+  <div class="section-head" style="max-width:680px;margin:0 auto 32px;">
+    <h2>Experience</h2>
+    <span>2021 — Now</span>
+  </div>
+  <!-- REPLACE: your real roles — duplicate a .timeline-item to add more -->
+  <div class="timeline">
+    <div class="timeline-item">
+      <span class="timeline-dot"></span>
+      <div class="timeline-head">
+        <span><span class="timeline-role">Motion Designer</span><span class="timeline-company">Freelance</span></span>
+        <span class="timeline-dates">2023 — Now</span>
+      </div>
+      <p>Directing and animating brand films, social content, and title sequences for clients across fashion, tech, and beauty.</p>
+    </div>
+    <div class="timeline-item">
+      <span class="timeline-dot"></span>
+      <div class="timeline-head">
+        <span><span class="timeline-role">Junior Motion Designer</span><span class="timeline-company">Studio Name</span></span>
+        <span class="timeline-dates">2022 — 2023</span>
+      </div>
+      <p>Supported the design team on animated explainers and social campaigns, owning motion for two major product launches.</p>
+    </div>
+    <div class="timeline-item">
+      <span class="timeline-dot"></span>
+      <div class="timeline-head">
+        <span><span class="timeline-role">Design Intern</span><span class="timeline-company">Agency Name</span></span>
+        <span class="timeline-dates">2021 — 2022</span>
+      </div>
+      <p>Learned the ropes across branding and motion, from storyboarding to final render.</p>
+    </div>
+  </div>
+
+  <div class="section-head" style="max-width:680px;margin:0 auto 32px;">
+    <h2>Skills</h2>
+    <span>Technical + Soft</span>
+  </div>
+  <div class="pin-row-wrap">
+    <p class="pin-row-label">technical</p>
+    <!-- REPLACE: your actual tool/skill list -->
+    <div class="pin-row">
+      <span class="pin">After Effects</span>
+      <span class="pin">Cinema 4D</span>
+      <span class="pin">Blender</span>
+      <span class="pin">Premiere Pro</span>
+      <span class="pin">Illustrator</span>
+      <span class="pin">Figma</span>
+    </div>
+  </div>
+  <div class="pin-row-wrap" style="margin-top:32px;">
+    <p class="pin-row-label">soft skills</p>
+    <!-- REPLACE: your own soft skills -->
+    <div class="pin-row pin-row-outline">
+      <span class="pin">Storytelling</span>
+      <span class="pin">Collaboration</span>
+      <span class="pin">Client Communication</span>
+      <span class="pin">Problem Solving</span>
+      <span class="pin">Attention to Detail</span>
+      <span class="pin">Time Management</span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span>© 2026 Ibukun Adeyemi</span>
+  <span>Built with motion in mind</span>
+</footer>
+
+<script>
+  document.querySelectorAll('.card-stack-wrap, .about-editorial, .quick-facts, .section-head, .timeline-item, .pin-row-wrap').forEach(el=>{
+    el.classList.add('reveal');
+  });
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  },{threshold:0.15});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+  // swipeable card stack: id-card up front, interest cards stacked behind it
+  (function(){
+    const stack = document.getElementById('cardStack');
+    if(!stack) return;
+    let cards = Array.from(stack.children);
+
+    function layout(animate){
+      cards.forEach((card, i)=>{
+        card.style.transition = animate ? '' : 'none';
+        card.style.pointerEvents = i === 0 ? 'auto' : 'none';
+        if(i === 0){
+          card.style.zIndex = 50; card.style.opacity = '1';
+          card.style.transform = 'translateX(0) translateY(0) rotate(0deg) scale(1)';
+        } else if(i === 1){
+          card.style.zIndex = 40; card.style.opacity = '1';
+          card.style.transform = 'translateX(42px) translateY(8px) rotate(5deg) scale(0.95)';
+        } else if(i === 2){
+          card.style.zIndex = 30; card.style.opacity = '1';
+          card.style.transform = 'translateX(76px) translateY(14px) rotate(9deg) scale(0.9)';
+        } else if(i === 3){
+          card.style.zIndex = 20; card.style.opacity = '0.7';
+          card.style.transform = 'translateX(104px) translateY(20px) rotate(12deg) scale(0.86)';
+        } else {
+          card.style.zIndex = 10; card.style.opacity = '0';
+          card.style.transform = 'translateX(104px) translateY(20px) rotate(12deg) scale(0.84)';
+        }
+      });
+    }
+    layout(false);
+
+    function advance(exitSign){
+      const front = cards.shift();
+      front.style.transition = 'transform 0.4s ease, opacity 0.3s ease';
+      front.style.transform = `translateX(${exitSign*160}%) rotate(${exitSign*20}deg) scale(0.9)`;
+      front.style.opacity = '0';
+      cards.push(front);
+      setTimeout(()=>{
+        layout(false);
+        requestAnimationFrame(()=> layout(true));
+      }, 380);
+    }
+    function rewind(){
+      const back = cards.pop();
+      cards.unshift(back);
+      back.style.transition = 'none';
+      back.style.transform = 'translateX(120%) rotate(16deg) scale(0.9)';
+      back.style.opacity = '0';
+      requestAnimationFrame(()=> layout(true));
+    }
+
+    document.getElementById('stackNext')?.addEventListener('click', ()=> advance(-1));
+    document.getElementById('stackPrev')?.addEventListener('click', rewind);
+
+    // drag / swipe on the front card
+    let startX = 0, dx = 0, dragging = false;
+    function pointX(e){ return e.touches ? e.touches[0].clientX : e.clientX; }
+    function onDown(e){
+      if(e.target.closest('.stack-card') !== cards[0]) return;
+      dragging = true; startX = pointX(e); dx = 0;
+      cards[0].style.transition = 'none';
+    }
+    function onMove(e){
+      if(!dragging) return;
+      dx = pointX(e) - startX;
+      cards[0].style.transform = `translateX(${dx}px) rotate(${dx/16}deg) scale(1)`;
+    }
+    function onUp(){
+      if(!dragging) return;
+      dragging = false;
+      if(Math.abs(dx) > 90){
+        advance(dx < 0 ? -1 : 1);
+      } else {
+        layout(true);
+      }
+      dx = 0;
+    }
+    stack.addEventListener('mousedown', onDown);
+    window.addEventListener('mousemove', onMove);
+    window.addEventListener('mouseup', onUp);
+    stack.addEventListener('touchstart', onDown, {passive:true});
+    stack.addEventListener('touchmove', onMove, {passive:true});
+    stack.addEventListener('touchend', onUp);
+  })();
+</script>
+
+</body>
+</html>

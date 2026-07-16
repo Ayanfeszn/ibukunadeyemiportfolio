@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lab — Ibukun</title>
+<link rel="stylesheet" href="styles.css">
+<!-- handwriting font, used only on this page for the scrapbook feel -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav>
+  <div class="logo"><a href="index.html">IBUKUN<span style="color:var(--accent)">.</span></a></div>
+  <div class="nav-links">
+    <a href="index.html#work">Work</a>
+    <a href="lab.html">Lab</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<section id="lab">
+  <!-- large faint background doodles, purely decorative -->
+  <svg class="lab-doodle lab-doodle-1" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 4c8 14-6 18-2 32s20 12 16 26c-10 10-32 10-42-2C10 46 18 24 32 14c6-4.5 13-7 18-10z" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+  <svg class="lab-doodle lab-doodle-3" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="34" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="6 8"/></svg>
+
+  <!-- REPLACE: scattered sticker badges — swap the emoji, reposition via the
+       .board-sticker-N classes in styles.css, or duplicate one for more. -->
+  <span class="board-sticker board-sticker-1" aria-hidden="true">🎬</span>
+  <span class="board-sticker board-sticker-2" aria-hidden="true">✨</span>
+  <span class="board-sticker board-sticker-3" aria-hidden="true">🎨</span>
+  <span class="board-sticker board-sticker-4" aria-hidden="true">💡</span>
+  <span class="board-sticker board-sticker-5" aria-hidden="true">🔥</span>
+
+  <div class="lab-heading">
+    <h2 class="scribble-title">the lab<span class="scribble-star">✦</span></h2>
+    <!-- REPLACE: your own line -->
+    <p>a corner for the weird, the fun, and the just-because — no clients, no briefs, just play.</p>
+  </div>
+
+  <!-- REPLACE: swap titles, captions, tags, and .thumb colors (.f1–.f7 in styles.css).
+       Card "shape" comes from the class on each .scrap-card: media / sticky / torn / stamp.
+       Add .lg or .sm to a media card for size variety, and .is-video for a play-button badge. -->
+  <div class="scrapboard">
+
+    <div class="scrap-card media f1" style="--r:-5deg">
+      <!-- REPLACE: swap for <img src="..."> or <video src="..."> -->
+      <div class="thumb"></div>
+      <p class="caption">type experiment</p>
+    </div>
+
+    <div class="scrap-card media f2 is-video" style="--r:3deg">
+      <div class="thumb"><span class="media-play">▶</span></div>
+      <p class="caption">weekend render</p>
+    </div>
+
+    <div class="scrap-card media lg f5 is-video" style="--r:-3deg">
+      <div class="thumb"><span class="media-play">▶</span></div>
+      <p class="caption">process reel</p>
+    </div>
+
+    <div class="scrap-card sticky pink" style="--r:4deg">
+      <p class="sticky-text">made this at 2am and honestly? no notes.</p>
+    </div>
+
+    <div class="scrap-card media f3" style="--r:-4deg">
+      <div class="thumb"></div>
+      <p class="caption">colour study</p>
+    </div>
+
+    <div class="scrap-card media f6" style="--r:5deg">
+      <div class="thumb"></div>
+      <p class="caption">texture test</p>
+    </div>
+
+    <div class="scrap-card torn cream" style="--r:5deg">
+      <p class="torn-title">loop a day</p>
+      <p class="torn-sub">30 days, 30 loops, 0 regrets (mostly)</p>
+    </div>
+
+    <div class="scrap-card media sm f4 is-video" style="--r:2deg">
+      <div class="thumb"><span class="media-play">▶</span></div>
+      <p class="caption">render doodles</p>
+    </div>
+
+    <div class="scrap-card media f7" style="--r:-3deg">
+      <div class="thumb"></div>
+      <p class="caption">motion sketch</p>
+    </div>
+
+    <div class="scrap-card stamp" style="--r:6deg">
+      <p class="stamp-eyebrow">est.</p>
+      <p class="stamp-title">2026</p>
+      <p class="stamp-sub">just for fun</p>
+    </div>
+
+    <!-- REPLACE: open slots — duplicate a media/sticky/torn/stamp block above and edit -->
+
+  </div>
+</section>
+
+<footer>
+  <span>© 2026 Ibukun Adeyemi</span>
+  <span>Built with motion in mind</span>
+</footer>
+
+<script>
+  document.querySelectorAll('.scrap-card, .lab-heading').forEach(el=>{
+    el.classList.add('reveal');
+  });
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  },{threshold:0.15});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+
+</body>
+</html>
