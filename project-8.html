@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Verve Lifestyle Card — Ibukun</title>
+<!-- REPLACE: swap .thumb / .thumb-still backgrounds for real stills or <video>/<img> tags.
+     This page reuses styles.css — edit that file to change the shared look. -->
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+  <div class="logo"><a href="index.html">IBUKUN<span style="color:var(--accent)">.</span></a></div>
+  <div class="nav-links">
+    <a href="index.html#work">Work</a>
+    <a href="lab.html">Lab</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<a class="back-link" href="index.html#work">← Back to Work</a>
+
+<section class="case-hero">
+  <h1>Verve Lifestyle Card</h1>
+  <div class="case-meta">
+    <div><span>Client</span><span>Verve</span></div>
+    <div><span>Role</span><span>3D Product Animation</span></div>
+    <div><span>Year</span><span>2025</span></div>
+    <div><span>Tools</span><span>Cinema 4D, After Effects</span></div>
+  </div>
+</section>
+
+<div class="case-body">
+  <h2>The Brief</h2>
+  <p>
+    Verve needed a way to introduce the Lifestyle Card that felt as
+    considered as the card itself. Flat product photography couldn't
+    capture the finish, weight, or detailing that make the physical
+    card feel premium in hand — so the ask was a 3D animation that
+    could sell that feeling in a few seconds of screen time, for use
+    across launch and social.
+  </p>
+  <p>
+    Rather than a straightforward turntable render, the goal was
+    something that felt directed — a small piece of film with its own
+    pacing, not just a spec sheet in motion.
+  </p>
+</div>
+
+<div class="case-body">
+  <h2>Concept &amp; Direction</h2>
+  <p>
+    The card itself became the main character. Every decision — camera
+    path, lighting rig, timing — was built around giving it room to be
+    looked at properly: no competing graphics or text pulling focus
+    away from the object, no rushed cuts. The brief called for
+    confidence, so the direction leaned into stillness and slow reveal
+    rather than fast, flashy motion.
+  </p>
+</div>
+
+<div class="process-list">
+  <div class="process-step">
+    <span class="step-num">01</span>
+    <div class="step-body">
+      <h3>Lighting &amp; Camera</h3>
+      <p>
+        Most of the work happened here. A soft key light and controlled
+        reflections were tuned to catch the card's edge detailing and
+        surface finish without blowing out highlights, then paired with
+        slow, deliberate camera moves — the kind that let the material
+        do the talking instead of the motion.
+      </p>
+    </div>
+  </div>
+  <div class="process-step">
+    <span class="step-num">02</span>
+    <div class="step-body">
+      <h3>Material &amp; Finish</h3>
+      <p>
+        Getting the card's surface to read correctly in 3D took several
+        passes — balancing how matte and reflective areas caught light
+        so the render felt like a real object rather than a CG stand-in,
+        matching Verve's actual card finish as closely as possible.
+      </p>
+    </div>
+  </div>
+  <div class="process-step">
+    <span class="step-num">03</span>
+    <div class="step-body">
+      <h3>Animation &amp; Rhythm</h3>
+      <p>
+        The final cut was built around a clean, confident rhythm —
+        entrances and holds timed so the card always had a moment to
+        breathe before the next move, keeping the piece feeling premium
+        rather than like a quick product spin.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="case-media p8">
+  <video id="case-video-8" src="media/project-8/final.mp4" autoplay muted loop playsinline></video>
+  <button class="sound-toggle" data-video="case-video-8" aria-label="Toggle sound">🔇</button>
+</div>
+
+<div class="case-body">
+  <h2>Outcome</h2>
+  <p>
+    The final animation gave Verve a piece of content that could carry
+    the Lifestyle Card launch on its own — clean enough for a keynote
+    moment, short enough to hold attention on social, and built to make
+    the card feel exactly as premium on screen as it does in hand.
+  </p>
+</div>
+
+
+<div class="case-nav">
+  <a href="project-7.html">← Prev<span class="next-title">Ayanfe Haven</span></a>
+  <a href="project-9.html" style="text-align:right;">Next project<span class="next-title">Catlog Social Media Videos</span></a>
+</div>
+
+<footer>
+  <span>© 2026 Ibukun Adeyemi</span>
+  <span>Built with motion in mind</span>
+</footer>
+
+<script>
+  document.querySelectorAll('.sound-toggle').forEach(btn=>{
+    const video = document.getElementById(btn.dataset.video);
+    if(!video) return;
+    btn.addEventListener('click', ()=>{
+      video.muted = !video.muted;
+      btn.textContent = video.muted ? '🔇' : '🔊';
+    });
+  });
+</script>
+
+</body>
+</html>

@@ -5,6 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact — Ibukun</title>
 <link rel="stylesheet" href="styles.css">
+<!-- handwriting font, used only for the small scribble accent on this page -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -19,13 +23,21 @@
 </nav>
 
 <section id="contact" class="contact">
+  <!-- faint decorative doodles, purely for flavor -->
+  <svg class="contact-doodle contact-doodle-1" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 4c8 14-6 18-2 32s20 12 16 26c-10 10-32 10-42-2C10 46 18 24 32 14c6-4.5 13-7 18-10z" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+  <svg class="contact-doodle contact-doodle-2" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="34" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="6 8"/></svg>
+
+  <span class="contact-badge"><span class="badge-dot"></span>available for new projects</span>
+  <p class="contact-scribble">say hello<span class="scribble-star">✦</span></p>
   <h2>Let's make<br>something move.</h2>
+  <p class="contact-sub">Got a project, a wild idea, or just want to talk motion? My inbox is always open.</p>
+
   <div class="contact-links">
     <!-- REPLACE: real email + social links -->
-    <a href="mailto:favouradeyemi6@gmail.com">favouradeyemi6@gmail.com</a>
-    <a href="#">Instagram</a>
-    <a href="#">Vimeo</a>
-    <a href="#">LinkedIn</a>
+    <a href="mailto:favouradeyemi6@gmail.com" class="contact-pill contact-pill-primary">
+      <span class="contact-pill-icon">✉️</span>favouradeyemi6@gmail.com
+    </a>
+    <a href="https://www.linkedin.com/in/ibukun-adeyemi-3785a617a/" target="_blank" rel="noopener" class="contact-pill"><span class="contact-pill-icon">💼</span>LinkedIn</a>
   </div>
 </section>
 

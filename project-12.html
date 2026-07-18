@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quickteller Digital Campaign — Ibukun</title>
+<!-- REPLACE: swap .thumb / .thumb-still backgrounds for real stills or <video>/<img> tags.
+     This page reuses styles.css — edit that file to change the shared look. -->
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+  <div class="logo"><a href="index.html">IBUKUN<span style="color:var(--accent)">.</span></a></div>
+  <div class="nav-links">
+    <a href="index.html#work">Work</a>
+    <a href="lab.html">Lab</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<a class="back-link" href="index.html#work">← Back to Work</a>
+
+<section class="case-hero">
+  <h1>Quickteller Digital Campaign</h1>
+  <div class="case-meta">
+    <div><span>Client</span><span>Interswitch</span></div>
+    <div><span>Role</span><span>2D Animation</span></div>
+    <div><span>Year</span><span>2025</span></div>
+    <div><span>Tools</span><span>After Effects, Illustrator</span></div>
+  </div>
+</section>
+
+<div class="case-body">
+  <h2>Overview</h2>
+  <p>
+    A 2D animation campaign for Quickteller, Interswitch's consumer payments
+    platform for airtime, bill payments, transfers, and eCash — used every
+    day by millions of Nigerians to pay for everyday things without a bank
+    card in hand.
+  </p>
+  <p>
+    The brief was to make everyday, slightly mundane actions — paying a
+    light bill, topping up airtime, sending money to a friend — feel quick
+    and satisfying on screen. Simple character and icon animation carried
+    the message across digital and social placements, keeping pace with a
+    platform built around speed and convenience.
+  </p>
+</div>
+
+<div class="clip-grid">
+  <div class="clip-cell">
+    <video id="qt-video-1" src="media/project-12/quickteller-icon.mp4" autoplay muted loop playsinline></video>
+    <button class="sound-toggle" data-video="qt-video-1" aria-label="Toggle sound">🔇</button>
+  </div>
+  <div class="clip-cell">
+    <video id="qt-video-2" src="media/project-12/payment-option.mp4" autoplay muted loop playsinline></video>
+    <button class="sound-toggle" data-video="qt-video-2" aria-label="Toggle sound">🔇</button>
+  </div>
+  <div class="clip-cell">
+    <video id="qt-video-3" src="media/project-12/dm-for-price.mp4" autoplay muted loop playsinline></video>
+    <button class="sound-toggle" data-video="qt-video-3" aria-label="Toggle sound">🔇</button>
+  </div>
+  <div class="clip-cell">
+    <video id="qt-video-4" src="media/project-12/pos-send.mp4" autoplay muted loop playsinline></video>
+    <button class="sound-toggle" data-video="qt-video-4" aria-label="Toggle sound">🔇</button>
+  </div>
+  <div class="clip-cell">
+    <video id="qt-video-5" src="media/project-12/earn-while-you-sleep.mp4" autoplay muted loop playsinline></video>
+    <button class="sound-toggle" data-video="qt-video-5" aria-label="Toggle sound">🔇</button>
+  </div>
+</div>
+
+<div class="case-nav">
+  <a href="project-11.html">← Prev<span class="next-title">Brassmoney Virtual Card</span></a>
+  <a href="project-13.html" style="text-align:right;">Next project<span class="next-title">Run It Lyric Video</span></a>
+</div>
+
+<footer>
+  <span>© 2026 Ibukun Adeyemi</span>
+  <span>Built with motion in mind</span>
+</footer>
+
+<script>
+  document.querySelectorAll('.sound-toggle').forEach(btn=>{
+    const video = document.getElementById(btn.dataset.video);
+    if(!video) return;
+    btn.addEventListener('click', ()=>{
+      video.muted = !video.muted;
+      btn.textContent = video.muted ? '🔇' : '🔊';
+    });
+  });
+</script>
+
+</body>
+</html>

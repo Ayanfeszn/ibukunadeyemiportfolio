@@ -22,52 +22,28 @@
   </div>
 </nav>
 
-<section id="about-id">
-  <div class="card-stack-wrap">
-    <p class="stack-hint">swipe (or tap the arrows) to see what else I'm into →</p>
-    <!-- REPLACE: the ID card's photo/name/role, and each .stack-card's emoji + label.
-         Order here = starting stack order (id-card on top). Duplicate a .stack-card
-         (copy the sketching/coffee/photography/gaming pattern) to add another. -->
-    <div class="card-stack" id="cardStack">
-      <div class="stack-card id-card">
-        <div class="id-card-top">
-          <span class="id-label">creative id</span>
-          <span class="id-no">no. 001</span>
-        </div>
-        <div class="id-photo">
-          <!-- REPLACE: swap for <img src="you.jpg"> -->
-          <span>photo</span>
-        </div>
-        <p class="id-name">Ibukun Adeyemi</p>
-        <p class="id-role">Motion Designer · Multidisciplinary Creative</p>
-        <div class="id-barcode" aria-hidden="true"></div>
-        <div class="id-bottom-row">
-          <span class="id-serial">IB-2026-MD</span>
-          <span class="id-signature">Ibukun</span>
-        </div>
+<section id="about-hero" class="about-hero">
+  <div class="about-collage">
+    <div class="about-row">
+      <!-- REPLACE: your own greeting + role list -->
+      <div class="about-note" style="--r:-4deg">
+        <p class="note-greeting">Hi! I'm Ibukun</p>
+        <ul class="note-roles">
+          <li>Motion Designer</li>
+          <li>2D &amp; 3D Animator</li>
+          <li>Brand &amp; Illustration</li>
+          <li>Multidisciplinary Creative</li>
+        </ul>
       </div>
 
-      <div class="stack-card interest-big it1">
-        <span class="interest-big-emoji">✏️</span>
-        <p class="interest-big-label">sketching</p>
-      </div>
-      <div class="stack-card interest-big it2">
-        <span class="interest-big-emoji">☕</span>
-        <p class="interest-big-label">coffee runs</p>
-      </div>
-      <div class="stack-card interest-big it3">
-        <span class="interest-big-emoji">📷</span>
-        <p class="interest-big-label">photography</p>
-      </div>
-      <div class="stack-card interest-big it4">
-        <span class="interest-big-emoji">🎮</span>
-        <p class="interest-big-label">gaming</p>
-      </div>
-    </div>
+      <div class="about-stamp" style="--r:9deg" aria-hidden="true"><span>IB</span></div>
 
-    <div class="stack-controls">
-      <button class="stack-btn" id="stackPrev" aria-label="Previous card">‹</button>
-      <button class="stack-btn" id="stackNext" aria-label="Next card">›</button>
+      <div class="about-photo-card" style="--r:5deg">
+        <svg class="paperclip" viewBox="0 0 40 70" aria-hidden="true">
+          <path d="M20 4C30 4 34 12 34 20L34 50C34 58 28 64 20 64C12 64 6 58 6 50L6 18C6 13 10 9 15 9C20 9 23 13 23 18L23 46" fill="none" stroke="#9a9a9a" stroke-width="4" stroke-linecap="round"/>
+        </svg>
+        <img src="media/about/ibukun-photo.jpg" alt="Ibukun Adeyemi">
+      </div>
     </div>
   </div>
 </section>
@@ -76,47 +52,71 @@
   <div class="about-editorial">
     <!-- REPLACE: your intro line + bio — first few words get the big treatment -->
     <p class="lede"><span>Hi, I'm Ibukun</span> — I turn still ideas into things that move, blink, and breathe.</p>
-    <p>I'm a motion designer who likes bending typography, illustration, and 3D until they tell a story. Most days that means brand films and social content; some days it means staying up too late animating something nobody asked for, purely because it's fun.</p>
+    <p>I'm a motion designer with 5+ years across 2D and 3D, building brand films, event visuals, and social content for teams like Interswitch, Brass, Grip, and Kuda.</p>
     <p>If it moves, I probably want to make it move better.</p>
+    <a class="resume-btn" href="files/Ibukun-Adeyemi-CV.pdf" download="Ibukun-Adeyemi-CV.pdf">Download CV ↓</a>
   </div>
 
   <div class="quick-facts">
     <!-- REPLACE: swap these for your own quirks -->
     <div class="fact"><span class="fact-label">based in</span><span class="fact-value">Lagos, Nigeria</span></div>
-    <div class="fact"><span class="fact-label">fueled by</span><span class="fact-value">cold brew &amp; deadlines</span></div>
-    <div class="fact"><span class="fact-label">currently into</span><span class="fact-value">kinetic type</span></div>
-    <div class="fact"><span class="fact-label">go-to tool</span><span class="fact-value">After Effects</span></div>
+    <div class="fact"><span class="fact-label">fueled by</span><span class="fact-value">the love of art</span></div>
+    <div class="fact"><span class="fact-label">currently into</span><span class="fact-value">beautiful stationary</span></div>
+    <div class="fact"><span class="fact-label">go-to tool</span><span class="fact-value">Cinema 4D</span></div>
   </div>
 
   <div class="section-head" style="max-width:680px;margin:0 auto 32px;">
     <h2>Experience</h2>
-    <span>2021 — Now</span>
+    <span>2020 — Now</span>
   </div>
-  <!-- REPLACE: your real roles — duplicate a .timeline-item to add more -->
   <div class="timeline">
     <div class="timeline-item">
       <span class="timeline-dot"></span>
       <div class="timeline-head">
-        <span><span class="timeline-role">Motion Designer</span><span class="timeline-company">Freelance</span></span>
-        <span class="timeline-dates">2023 — Now</span>
+        <span><span class="timeline-role">Multimedia Designer</span><span class="timeline-company">Interswitch</span></span>
+        <span class="timeline-dates">Aug 2024 — Now</span>
       </div>
-      <p>Directing and animating brand films, social content, and title sequences for clients across fashion, tech, and beauty.</p>
+      <p>Leading motion design for major brand events (VerveLife, Quickteller InsomniaQ, Interswitch Kickoff), plus TVC and OOH work across Quickteller and Verve.</p>
     </div>
     <div class="timeline-item">
       <span class="timeline-dot"></span>
       <div class="timeline-head">
-        <span><span class="timeline-role">Junior Motion Designer</span><span class="timeline-company">Studio Name</span></span>
+        <span><span class="timeline-role">Brand &amp; Motion Designer</span><span class="timeline-company">Brass Banking</span></span>
+        <span class="timeline-dates">Apr 2023 — 2024</span>
+      </div>
+      <p>Created motion graphics for marketing campaigns and product explainers, plus social creatives for Brassmoney.</p>
+    </div>
+    <div class="timeline-item">
+      <span class="timeline-dot"></span>
+      <div class="timeline-head">
+        <span><span class="timeline-role">3D Illustrator &amp; Motion Designer</span><span class="timeline-company">Catlog</span></span>
+        <span class="timeline-dates">2022 — 2024</span>
+      </div>
+      <p>Built Catlog's 3D illustration system and led motion for marketing content and the yearly Wrapped project.</p>
+    </div>
+    <div class="timeline-item">
+      <span class="timeline-dot"></span>
+      <div class="timeline-head">
+        <span><span class="timeline-role">Motion Designer</span><span class="timeline-company">Kuda</span></span>
         <span class="timeline-dates">2022 — 2023</span>
       </div>
-      <p>Supported the design team on animated explainers and social campaigns, owning motion for two major product launches.</p>
+      <p>Produced short-form social content and animated 10+ billboard campaigns reaching 100k+ users, including a World Cup campaign delivered in three months.</p>
     </div>
     <div class="timeline-item">
       <span class="timeline-dot"></span>
       <div class="timeline-head">
-        <span><span class="timeline-role">Design Intern</span><span class="timeline-company">Agency Name</span></span>
+        <span><span class="timeline-role">3D Motion Designer</span><span class="timeline-company">Grip</span></span>
         <span class="timeline-dates">2021 — 2022</span>
       </div>
-      <p>Learned the ropes across branding and motion, from storyboarding to final render.</p>
+      <p>Led 3D animated promos and social graphics, building a reusable 3D design system that cut production time by 30%.</p>
+    </div>
+    <div class="timeline-item">
+      <span class="timeline-dot"></span>
+      <div class="timeline-head">
+        <span><span class="timeline-role">2D Animator</span><span class="timeline-company">Disrupt DNA</span></span>
+        <span class="timeline-dates">2020 — 2021</span>
+      </div>
+      <p>Created 2D animations for branding and social campaigns, contributing to measurable lifts in engagement and conversions.</p>
     </div>
   </div>
 
@@ -130,10 +130,12 @@
     <div class="pin-row">
       <span class="pin">After Effects</span>
       <span class="pin">Cinema 4D</span>
-      <span class="pin">Blender</span>
+      <span class="pin">Redshift</span>
+      <span class="pin">Arnold Renderer</span>
+      <span class="pin">Rive</span>
       <span class="pin">Premiere Pro</span>
       <span class="pin">Illustrator</span>
-      <span class="pin">Figma</span>
+      <span class="pin">Photoshop</span>
     </div>
   </div>
   <div class="pin-row-wrap" style="margin-top:32px;">
@@ -156,7 +158,7 @@
 </footer>
 
 <script>
-  document.querySelectorAll('.card-stack-wrap, .about-editorial, .quick-facts, .section-head, .timeline-item, .pin-row-wrap').forEach(el=>{
+  document.querySelectorAll('.about-collage, .about-editorial, .quick-facts, .section-head, .timeline-item, .pin-row-wrap').forEach(el=>{
     el.classList.add('reveal');
   });
   const io = new IntersectionObserver((entries)=>{
@@ -165,90 +167,6 @@
     });
   },{threshold:0.15});
   document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
-
-  // swipeable card stack: id-card up front, interest cards stacked behind it
-  (function(){
-    const stack = document.getElementById('cardStack');
-    if(!stack) return;
-    let cards = Array.from(stack.children);
-
-    function layout(animate){
-      cards.forEach((card, i)=>{
-        card.style.transition = animate ? '' : 'none';
-        card.style.pointerEvents = i === 0 ? 'auto' : 'none';
-        if(i === 0){
-          card.style.zIndex = 50; card.style.opacity = '1';
-          card.style.transform = 'translateX(0) translateY(0) rotate(0deg) scale(1)';
-        } else if(i === 1){
-          card.style.zIndex = 40; card.style.opacity = '1';
-          card.style.transform = 'translateX(42px) translateY(8px) rotate(5deg) scale(0.95)';
-        } else if(i === 2){
-          card.style.zIndex = 30; card.style.opacity = '1';
-          card.style.transform = 'translateX(76px) translateY(14px) rotate(9deg) scale(0.9)';
-        } else if(i === 3){
-          card.style.zIndex = 20; card.style.opacity = '0.7';
-          card.style.transform = 'translateX(104px) translateY(20px) rotate(12deg) scale(0.86)';
-        } else {
-          card.style.zIndex = 10; card.style.opacity = '0';
-          card.style.transform = 'translateX(104px) translateY(20px) rotate(12deg) scale(0.84)';
-        }
-      });
-    }
-    layout(false);
-
-    function advance(exitSign){
-      const front = cards.shift();
-      front.style.transition = 'transform 0.4s ease, opacity 0.3s ease';
-      front.style.transform = `translateX(${exitSign*160}%) rotate(${exitSign*20}deg) scale(0.9)`;
-      front.style.opacity = '0';
-      cards.push(front);
-      setTimeout(()=>{
-        layout(false);
-        requestAnimationFrame(()=> layout(true));
-      }, 380);
-    }
-    function rewind(){
-      const back = cards.pop();
-      cards.unshift(back);
-      back.style.transition = 'none';
-      back.style.transform = 'translateX(120%) rotate(16deg) scale(0.9)';
-      back.style.opacity = '0';
-      requestAnimationFrame(()=> layout(true));
-    }
-
-    document.getElementById('stackNext')?.addEventListener('click', ()=> advance(-1));
-    document.getElementById('stackPrev')?.addEventListener('click', rewind);
-
-    // drag / swipe on the front card
-    let startX = 0, dx = 0, dragging = false;
-    function pointX(e){ return e.touches ? e.touches[0].clientX : e.clientX; }
-    function onDown(e){
-      if(e.target.closest('.stack-card') !== cards[0]) return;
-      dragging = true; startX = pointX(e); dx = 0;
-      cards[0].style.transition = 'none';
-    }
-    function onMove(e){
-      if(!dragging) return;
-      dx = pointX(e) - startX;
-      cards[0].style.transform = `translateX(${dx}px) rotate(${dx/16}deg) scale(1)`;
-    }
-    function onUp(){
-      if(!dragging) return;
-      dragging = false;
-      if(Math.abs(dx) > 90){
-        advance(dx < 0 ? -1 : 1);
-      } else {
-        layout(true);
-      }
-      dx = 0;
-    }
-    stack.addEventListener('mousedown', onDown);
-    window.addEventListener('mousemove', onMove);
-    window.addEventListener('mouseup', onUp);
-    stack.addEventListener('touchstart', onDown, {passive:true});
-    stack.addEventListener('touchmove', onMove, {passive:true});
-    stack.addEventListener('touchend', onUp);
-  })();
 </script>
 
 </body>

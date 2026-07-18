@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Run It Lyric Video — Ibukun</title>
+<!-- REPLACE: swap .thumb / .thumb-still backgrounds for real stills or <video>/<img> tags.
+     This page reuses styles.css — edit that file to change the shared look. -->
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+  <div class="logo"><a href="index.html">IBUKUN<span style="color:var(--accent)">.</span></a></div>
+  <div class="nav-links">
+    <a href="index.html#work">Work</a>
+    <a href="lab.html">Lab</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<a class="back-link" href="index.html#work">← Back to Work</a>
+
+<section class="case-hero">
+  <h1>Run It Lyric Video</h1>
+  <div class="case-meta">
+    <div><span>Client</span><span>Quickteller (Interswitch)</span></div>
+    <div><span>Role</span><span>2D Lyric Video Animation</span></div>
+    <div><span>Year</span><span>2025</span></div>
+    <div><span>Tools</span><span>After Effects, Illustrator</span></div>
+  </div>
+</section>
+
+<div class="case-body">
+  <h2>Overview</h2>
+  <p>
+    A lyric-style animated video made for "Run It," a campaign track produced
+    for Quickteller — built to give the campaign's jingle a visual life of
+    its own across social and digital placements.
+  </p>
+  <p>
+    The animation leaned on bold kinetic type and simple character motion,
+    timed tightly to the track's rhythm so the words themselves became part
+    of the choreography — energetic, fast-paced, and built to hold attention
+    in a short scroll-stopping format.
+  </p>
+</div>
+
+<div class="case-media p13">
+  <video id="case-video-13" src="media/project-13/run-it-lyrics-video.mp4" autoplay muted loop playsinline></video>
+  <button class="sound-toggle" data-video="case-video-13" aria-label="Toggle sound">🔇</button>
+</div>
+
+<div class="case-gallery">
+  <div class="thumb-still p13"><div class="thumb"></div></div>
+  <div class="thumb-still p13"><div class="thumb"></div></div>
+</div>
+
+<div class="case-nav">
+  <a href="project-12.html">← Prev<span class="next-title">Quickteller Digital Campaign</span></a>
+  <a href="project-14.html" style="text-align:right;">Next project<span class="next-title">Vervemobile Motion Guidelines</span></a>
+</div>
+
+<footer>
+  <span>© 2026 Ibukun Adeyemi</span>
+  <span>Built with motion in mind</span>
+</footer>
+
+<script>
+  document.querySelectorAll('.sound-toggle').forEach(btn=>{
+    const video = document.getElementById(btn.dataset.video);
+    if(!video) return;
+    btn.addEventListener('click', ()=>{
+      video.muted = !video.muted;
+      btn.textContent = video.muted ? '🔇' : '🔊';
+    });
+  });
+</script>
+
+</body>
+</html>

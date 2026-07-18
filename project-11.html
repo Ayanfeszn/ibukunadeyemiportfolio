@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brassmoney Virtual Card — Ibukun</title>
+<!-- REPLACE: swap .thumb / .thumb-still backgrounds for real stills or <video>/<img> tags.
+     This page reuses styles.css — edit that file to change the shared look. -->
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+  <div class="logo"><a href="index.html">IBUKUN<span style="color:var(--accent)">.</span></a></div>
+  <div class="nav-links">
+    <a href="index.html#work">Work</a>
+    <a href="lab.html">Lab</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<a class="back-link" href="index.html#work">← Back to Work</a>
+
+<section class="case-hero">
+  <h1>Brassmoney Virtual Card</h1>
+  <div class="case-meta">
+    <div><span>Client</span><span>Brass</span></div>
+    <div><span>Role</span><span>3D Product Animation</span></div>
+    <div><span>Year</span><span>2025</span></div>
+    <div><span>Tools</span><span>Cinema 4D, Redshift</span></div>
+  </div>
+</section>
+
+<div class="case-body">
+  <h2>Overview</h2>
+  <p>
+    A 3D product animation for Brassmoney's virtual card — part of Brass's
+    business banking platform that lets Nigerian businesses issue unlimited
+    virtual and physical cards to their team, set spend limits per card,
+    and track exactly how every card holder spends.
+  </p>
+  <p>
+    The goal was to give a card that only exists on-screen the same
+    tactile, premium presence as the physical corporate card, so it read
+    as trustworthy and real even without ever touching a hand — clean
+    render, confident material, and light that made the interface feel
+    solid rather than abstract.
+  </p>
+</div>
+
+<div class="case-media p11" style="aspect-ratio:4/5;max-width:520px;margin-left:auto;margin-right:auto;">
+  <video id="case-video-11" src="media/project-11/virtual_card_Brassmoney.mp4" autoplay muted loop playsinline></video>
+  <button class="sound-toggle" data-video="case-video-11" aria-label="Toggle sound">🔇</button>
+</div>
+
+<div class="case-gallery">
+  <div class="thumb-still p11 thumb-native"><img src="media/project-11/vc-1.png" alt="Brassmoney virtual card still"></div>
+  <div class="thumb-still p11 thumb-native"><img src="media/project-11/vc-2.png" alt="Brassmoney virtual card still 2"></div>
+</div>
+
+<div class="case-nav">
+  <a href="project-10.html">← Prev<span class="next-title">Africa API Product Launch</span></a>
+  <a href="project-12.html" style="text-align:right;">Next project<span class="next-title">Quickteller Digital Campaign</span></a>
+</div>
+
+<footer>
+  <span>© 2026 Ibukun Adeyemi</span>
+  <span>Built with motion in mind</span>
+</footer>
+
+<script>
+  document.querySelectorAll('.sound-toggle').forEach(btn=>{
+    const video = document.getElementById(btn.dataset.video);
+    if(!video) return;
+    btn.addEventListener('click', ()=>{
+      video.muted = !video.muted;
+      btn.textContent = video.muted ? '🔇' : '🔊';
+    });
+  });
+</script>
+
+</body>
+</html>
