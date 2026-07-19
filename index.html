@@ -9,7 +9,7 @@
   1. Search for "REPLACE:" comments — each marks text, a link, or a thumbnail to swap in.
   2. Project thumbnails are CSS gradient placeholders. To use real media, replace the
      .thumb div's background with: background: url('your-image.jpg') center/cover;
-     or drop in a <video> / <img> tag inside .thumb instead.
+     or drop in a <video> / <img loading="lazy" decoding="async"> tag inside .thumb instead.
   3. Colors are defined as CSS variables at the top of styles.css — change
      --accent to reset the whole palette.
   4. Each Selected Work card links to its own case-study page (project-1.html … project-7.html).
@@ -33,28 +33,28 @@
   <div class="hero-inner">
     <!-- REPLACE: small badges pulled from the Lab page — mix of circle/blob shapes for variety -->
     <div class="sticker sticker-1 sticker-circle" aria-hidden="true">
-      <img src="media/lab/3d-illustrations/tennis0050.png" alt="">
+      <img loading="lazy" decoding="async" src="media/lab/3d-illustrations/tennis0050.jpg" alt="">
     </div>
     <div class="sticker sticker-2 sticker-blob" aria-hidden="true">
-      <img src="media/lab/3d-illustrations/1-1.png" alt="">
+      <img loading="lazy" decoding="async" src="media/lab/3d-illustrations/1-1.jpg" alt="">
     </div>
     <div class="sticker sticker-3 sticker-circle" aria-hidden="true">
-      <img src="media/lab/3d-illustrations/lamp0085.png" alt="">
+      <img loading="lazy" decoding="async" src="media/lab/3d-illustrations/lamp0085.jpg" alt="">
     </div>
     <div class="sticker sticker-4 sticker-blob" aria-hidden="true">
-      <img src="media/lab/art/i-think-i-look-good.png" alt="">
+      <img loading="lazy" decoding="async" src="media/lab/art/i-think-i-look-good.jpg" alt="">
     </div>
     <div class="sticker sticker-5 sticker-circle" aria-hidden="true">
-      <img src="media/lab/art/serenity.png" alt="">
+      <img loading="lazy" decoding="async" src="media/lab/art/serenity.jpg" alt="">
     </div>
     <div class="sticker sticker-6 sticker-blob" aria-hidden="true">
-      <img src="media/lab/3d-illustrations/3-1.png" alt="">
+      <img loading="lazy" decoding="async" src="media/lab/3d-illustrations/3-1.jpg" alt="">
     </div>
     <div class="sticker sticker-7 sticker-circle" aria-hidden="true">
-      <img src="media/lab/3d-illustrations/8-1.png" alt="">
+      <img loading="lazy" decoding="async" src="media/lab/3d-illustrations/8-1.jpg" alt="">
     </div>
     <div class="sticker sticker-8 sticker-blob" aria-hidden="true">
-      <img src="media/lab/art/i-swear-ill-start-tomorrow.png" alt="">
+      <img loading="lazy" decoding="async" src="media/lab/art/i-swear-ill-start-tomorrow.jpg" alt="">
     </div>
     <!-- REPLACE: a short, creative line about you -->
     <p class="hero-line">Multidisciplinary creative <span class="hero-mark">— I make things move, blink, and breathe.</span></p>
@@ -81,7 +81,7 @@
        data-tags should match the filter buttons above (space-separated for multiple). -->
   <div class="grid" id="work-grid">
     <a class="project p1" href="project-1.html" data-tags="2D">
-      <div class="thumb"><img src="media/project-1/vervelife-2025-thumbnail.png" alt="Vervelife 2025"></div>
+      <div class="thumb"><img loading="lazy" decoding="async" src="media/project-1/vervelife-2025-thumbnail.jpg" alt="Vervelife 2025"></div>
       <div class="project-info">
         <div>
           <h3>Vervelife 2025</h3>
@@ -91,7 +91,7 @@
       </div>
     </a>
     <a class="project p2" href="project-13.html" data-tags="2D Motion">
-      <div class="thumb"><img src="media/project-13/runit-cover.png" alt="Run It Lyric Video"></div>
+      <div class="thumb"><img loading="lazy" decoding="async" src="media/project-13/runit-cover.jpg" alt="Run It Lyric Video"></div>
       <div class="project-info">
         <div>
           <h3>Run It Lyric Video</h3>
@@ -101,7 +101,7 @@
       </div>
     </a>
     <a class="project p3" href="project-3.html" data-tags="3D">
-      <div class="thumb"><img src="media/project-3/catlog-thumbnail.png" alt="Catlog 3D icon set"></div>
+      <div class="thumb"><img loading="lazy" decoding="async" src="media/project-3/catlog-thumbnail.jpg" alt="Catlog 3D icon set"></div>
       <div class="project-info">
         <div>
           <h3>Catlog Brand Illustrations</h3>
@@ -111,7 +111,7 @@
       </div>
     </a>
     <a class="project p4" href="project-4.html" data-tags="3D">
-      <div class="thumb" style="background:#fff;"><img src="media/project-4/brasscardlogo.avif" alt="Brass Corporate Card"></div>
+      <div class="thumb" style="background:#fff;"><img loading="lazy" decoding="async" src="media/project-4/brasscardlogo.avif" alt="Brass Corporate Card"></div>
       <div class="project-info">
         <div>
           <h3>Brass Corporate Card Launch</h3>
@@ -121,7 +121,7 @@
       </div>
     </a>
     <a class="project p5" href="project-5.html" data-tags="2D 3D Motion">
-      <div class="thumb"><img src="media/project-5/B1puG1RHBxMR6MDsiGezzgk3gGo.avif" alt="Grip Brand Identity"></div>
+      <div class="thumb"><img loading="lazy" decoding="async" src="media/project-5/B1puG1RHBxMR6MDsiGezzgk3gGo.avif" alt="Grip Brand Identity"></div>
       <div class="project-info">
         <div>
           <h3>Grip Brand Identity</h3>
@@ -131,7 +131,7 @@
       </div>
     </a>
     <a class="project p6" href="project-7.html" data-tags="Brand">
-      <div class="thumb"><img src="media/project-7/cover.PNG" alt="Ayanfe Haven"></div>
+      <div class="thumb"><img loading="lazy" decoding="async" src="media/project-7/cover.PNG" alt="Ayanfe Haven"></div>
       <div class="project-info">
         <div>
           <h3>Ayanfe Haven</h3>
@@ -141,7 +141,7 @@
       </div>
     </a>
     <a class="project p7" href="project-8.html" data-tags="3D">
-      <div class="thumb"><img src="media/project-8/cover.png" alt="Verve Lifestyle Card"></div>
+      <div class="thumb"><img loading="lazy" decoding="async" src="media/project-8/cover.jpg" alt="Verve Lifestyle Card"></div>
       <div class="project-info">
         <div>
           <h3>Verve Lifestyle Card</h3>
@@ -151,7 +151,7 @@
       </div>
     </a>
     <a class="project p8" href="project-9.html" data-tags="2D Motion">
-      <div class="thumb"><img src="media/project-9/catlog-social-logo.avif" alt="Catlog Social Media Videos"></div>
+      <div class="thumb"><img loading="lazy" decoding="async" src="media/project-9/catlog-social-logo.avif" alt="Catlog Social Media Videos"></div>
       <div class="project-info">
         <div>
           <h3>Catlog Social Media Videos</h3>
@@ -161,7 +161,7 @@
       </div>
     </a>
     <a class="project p9 is-locked" href="project-10.html" data-tags="2D Motion">
-      <div class="thumb"><img src="media/project-10/cover.png" alt="Africa API Product Launch"></div>
+      <div class="thumb"><img loading="lazy" decoding="async" src="media/project-10/cover.jpg" alt="Africa API Product Launch"></div>
       <div class="lock-overlay"><span>Coming Soon</span></div>
       <div class="project-info">
         <div>
@@ -172,7 +172,7 @@
       </div>
     </a>
     <a class="project p10" href="project-11.html" data-tags="3D">
-      <div class="thumb"><img src="media/project-11/vc-1.png" alt="Brassmoney Virtual Card"></div>
+      <div class="thumb"><img loading="lazy" decoding="async" src="media/project-11/vc-1.png" alt="Brassmoney Virtual Card"></div>
       <div class="project-info">
         <div>
           <h3>Brassmoney Virtual Card</h3>
@@ -182,7 +182,7 @@
       </div>
     </a>
     <a class="project p11" href="project-12.html" data-tags="2D">
-      <div class="thumb"><img src="media/project-12/quickteller-thumbnail.png" alt="Quickteller Digital Campaign"></div>
+      <div class="thumb"><img loading="lazy" decoding="async" src="media/project-12/quickteller-thumbnail.jpg" alt="Quickteller Digital Campaign"></div>
       <div class="project-info">
         <div>
           <h3>Quickteller Digital Campaign</h3>
@@ -204,7 +204,7 @@
       </div>
     </a>
     <a class="project p13" href="project-14.html" data-tags="Motion">
-      <div class="thumb"><img src="media/project-14/cover.png" alt="Vervemobile Motion Guidelines"></div>
+      <div class="thumb"><img loading="lazy" decoding="async" src="media/project-14/cover.png" alt="Vervemobile Motion Guidelines"></div>
       <div class="project-info">
         <div>
           <h3>Vervemobile Motion Guidelines</h3>
