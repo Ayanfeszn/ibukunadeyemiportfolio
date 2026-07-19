@@ -2,3 +2,21 @@
 .vercel
 .claude
 node_modules
+
+# original full-resolution uploads — compressed web-ready copies live alongside
+# these under the same media/ folders and are what the site actually references
+media/project-7/Artboard 5.PNG
+media/project-7/Asset 18xxxhdpi.png
+media/project-7/IMG_0027.jpeg
+media/project-7/IMG_0118.jpeg
+media/project-7/IMG_0121.jpeg
+media/project-7/IMG_0127.jpeg
+media/project-7/IMG_9542.jpeg
+media/project-7/Screenshot 2025-10-09 at 23.33.14.png
+media/project-7/TISSU PAPER DESIGN.png
+media/project-7/ayanfe logo.png
+media/project-7/box 1.png
+media/project-7/experience@2x.png
+media/project-7/logo sticker.png
+media/project-7/pattern.png
+media/project-7/Screenshot 2026-07-19 at 6.02.47 PM.png
