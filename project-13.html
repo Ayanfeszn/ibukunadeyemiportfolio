@@ -48,7 +48,7 @@
 </div>
 
 <div class="case-media p13">
-  <video id="case-video-13" src="media/project-13/run-it-lyrics-video.mp4" autoplay muted loop playsinline></video>
+  <video preload="none" id="case-video-13" data-src="media/project-13/run-it-lyrics-video.mp4" muted loop playsinline></video>
   <button class="sound-toggle" data-video="case-video-13" aria-label="Toggle sound">🔇</button>
 </div>
 
@@ -78,5 +78,6 @@
   });
 </script>
 
+<script src="lazy-video.js"></script>
 </body>
 </html>

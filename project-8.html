@@ -102,7 +102,7 @@
 </div>
 
 <div class="case-media p8">
-  <video id="case-video-8" src="media/project-8/final.mp4" autoplay muted loop playsinline></video>
+  <video preload="none" id="case-video-8" data-src="media/project-8/final.mp4" muted loop playsinline></video>
   <button class="sound-toggle" data-video="case-video-8" aria-label="Toggle sound">🔇</button>
 </div>
 
@@ -138,5 +138,6 @@
   });
 </script>
 
+<script src="lazy-video.js"></script>
 </body>
 </html>

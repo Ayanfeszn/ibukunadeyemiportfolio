@@ -47,13 +47,13 @@
 </div>
 
 <div class="case-media p4">
-  <video id="case-video-4" src="media/project-4/Brass_Coporate_Card.mp4" autoplay muted loop playsinline></video>
+  <video preload="none" id="case-video-4" data-src="media/project-4/Brass_Coporate_Card.mp4" muted loop playsinline></video>
   <button class="sound-toggle" data-video="case-video-4" aria-label="Toggle sound">🔇</button>
 </div>
 
 <div class="case-gallery" style="grid-template-columns:1fr;">
   <div class="thumb-still p4" style="aspect-ratio:16/9;">
-    <video src="media/project-4/brass_coporate_card_product_vidoe_v1 (1080p).mp4" autoplay muted loop playsinline></video>
+    <video preload="none" data-src="media/project-4/brass_coporate_card_product_vidoe_v1 (1080p).mp4" muted loop playsinline></video>
   </div>
 </div>
 
@@ -78,5 +78,6 @@
   });
 </script>
 
+<script src="lazy-video.js"></script>
 </body>
 </html>

@@ -48,7 +48,7 @@
 
     <div class="scrap-card media lg f1" style="--r:-5deg">
       <div class="thumb" style="aspect-ratio:3/4;">
-        <video src="media/lab/3d-motion-design/sphere-switch.mp4" autoplay muted loop playsinline></video>
+        <video preload="none" data-src="media/lab/3d-motion-design/sphere-switch.mp4" muted loop playsinline></video>
       </div>
       <p class="caption">sphere study</p>
     </div>
@@ -69,14 +69,14 @@
 
     <div class="scrap-card media lg f4" style="--r:4deg">
       <div class="thumb" style="aspect-ratio:16/9;">
-        <video src="media/lab/3d-motion-design/suitcase-change.mp4" autoplay muted loop playsinline></video>
+        <video preload="none" data-src="media/lab/3d-motion-design/suitcase-change.mp4" muted loop playsinline></video>
       </div>
       <p class="caption">suitcase swap</p>
     </div>
 
     <div class="scrap-card media f5" style="--r:-4deg">
       <div class="thumb" style="aspect-ratio:360/203;">
-        <video src="media/lab/2d-animation/animation-loop-1.mp4" autoplay muted loop playsinline></video>
+        <video preload="none" data-src="media/lab/2d-animation/animation-loop-1.mp4" muted loop playsinline></video>
       </div>
       <p class="caption">2d animation test</p>
     </div>
@@ -90,7 +90,7 @@
 
     <div class="scrap-card media f7" style="--r:2deg">
       <div class="thumb" style="aspect-ratio:289/361;">
-        <video src="media/lab/2d-animation/animation-loop-2.mp4" autoplay muted loop playsinline></video>
+        <video preload="none" data-src="media/lab/2d-animation/animation-loop-2.mp4" muted loop playsinline></video>
       </div>
       <p class="caption">2d loop</p>
     </div>
@@ -230,7 +230,7 @@
 
     <div class="scrap-card media f9" style="--r:-4deg">
       <div class="thumb" style="aspect-ratio:297/320;">
-        <video src="media/lab/3d-motion-design/flower-bloom.mp4" autoplay muted loop playsinline></video>
+        <video preload="none" data-src="media/lab/3d-motion-design/flower-bloom.mp4" muted loop playsinline></video>
       </div>
       <p class="caption">flower bloom</p>
     </div>
@@ -493,5 +493,6 @@
   document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 </script>
 
+<script src="lazy-video.js"></script>
 </body>
 </html>
